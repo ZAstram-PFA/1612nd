@@ -1,0 +1,6 @@
+<h1> List of {{ product_type_template }} </h1>
+<ul>
+    {% for data in product_template %}
+    <li><a href="/product/{{ product_type_template }}/{{ loop.index0 }}">{{ data['name'] }}</a></li>
+    {% endfor %}
+</ul>

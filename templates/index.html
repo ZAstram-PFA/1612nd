@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Children's Corner!</h1>
+<p>We offer a great selection of products for kids.</p>
+<body>
+    <img src="{{ url_for('static',filename = 'img/pic.jpg') }}"
+    style="width:500px;height: 300px;">
+</body>
+<p>Click on the links below:</p>
+<ul>
+    <li><a href='/product/books'>Books for kids!</a></li>
+    <li><a href='/product/toys'>Educational toys!</a></li>
+    <li><a href='/product/school supplies'>School supplies!</a></li>
+</ul>
+<footer><a href='/about'>About us!</a></footer>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1> {{ data_profile.name }} </h1>
+<img src="{{ data_profile.url }}" alt="">
+<p> {{ data_profile.description }} </p>
+<ul>
+    <li>Creator: {{ data_profile.creator }}</li>
+    <li>Price: {{ data_profile.price }}</li>
+</ul>
+{% endblock %}
